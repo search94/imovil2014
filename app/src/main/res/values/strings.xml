@@ -138,4 +138,9 @@ limitations under the License.
     <string name="pref_level1_name">Aprendiz</string>
     <string name="pref_level2_name">Iniciado</string>
     <string name="pref_level3_name">Maestro</string>
+    <string name="logic_circuit">Circuito lógico</string>
+    <string name="circuit1">Circuito 1-Facil</string>
+    <string name="circuit2">Circuito 2- Medio</string>
+    <string name="circuit3">Circuito 3- Dificil</string>
+    <string name="cdefault">cdefault</string>
 </resources>

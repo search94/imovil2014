@@ -24,6 +24,7 @@ import es.uniovi.imovil.fcrtrainer.digitalinformation.FloatingPointExerciseFragm
 import es.uniovi.imovil.fcrtrainer.digitalinformation.HexadecimalExerciseFragment;
 import es.uniovi.imovil.fcrtrainer.digitalinformation.SignedMagnitudeExerciseFragment;
 import es.uniovi.imovil.fcrtrainer.digitalinformation.TwosComplementExerciseFragment;
+import es.uniovi.imovil.fcrtrainer.digitalsystems.LogicCircuitExerciseFragment;
 import es.uniovi.imovil.fcrtrainer.digitalsystems.LogicGateExerciseFragment;
 import es.uniovi.imovil.fcrtrainer.digitalsystems.LogicOperationExerciseFragment;
 import es.uniovi.imovil.fcrtrainer.highscores.HighscoresFragment;
@@ -83,6 +84,13 @@ final public class FragmentFactory {
 			return NetworkAddressExerciseFragment.newInstance();
 		case R.string.network_mask:
 			return NetworkMaskExerciseFragment.newInstance();
+
+			case R.string.logic_circuit:
+				return LogicCircuitExerciseFragment.newInstance();
+
+
+
+
 		default:
 			return BinaryExerciseFragment.newInstance();
 		}

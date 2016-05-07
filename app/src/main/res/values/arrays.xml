@@ -29,6 +29,7 @@ limitations under the License.
     <array name="digital_systems">
         <item>@string/logic_gate</item>
         <item>@string/logic_operation</item>
+        <item>@string/logic_circuit</item>
     </array>
     <array name="networks">
         <item>@string/network_address</item>
@@ -124,5 +125,9 @@ limitations under the License.
          <item>@string/pref_level2_name</item>
          <item>@string/pref_level3_name</item>
      </string-array>
-     
+     <string-array name="circuits">
+         <item>@string/circuit1</item>
+         <item>@string/circuit2</item>
+         <item>@string/circuit3</item>
+     </string-array>
 </resources>

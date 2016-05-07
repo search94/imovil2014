@@ -117,5 +117,10 @@
     <string name="pref_level1_name">Beginner</string>
     <string name="pref_level2_name">Advanced</string>
     <string name="pref_level3_name">Master</string>
-    
+    <string name="logic_circuit">Logic circuit</string>
+    <string name="circuit1">Circuit 1-Easy</string>
+    <string name="circuit2">Circuit 2-Medium</string>
+    <string name="circuit3">Circuit 3-Hard</string>
+    <string name="cdefault">cdefault</string>
+
 </resources>

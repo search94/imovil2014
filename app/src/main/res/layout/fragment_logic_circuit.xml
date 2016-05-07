@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        style="@style/game_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/ga"
+            android:id="@+id/linearLayout">
+
+            <include
+            android:id="@+id/game_info_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/game_info_panel"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Utilizando los digitos binarios a la izquierda con su correspondientente entrada, calcular la salida a la derecha"
+                android:id="@+id/InfoText"
+                android:layout_above="@+id/linearLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:id="@+id/listCircuits"
+                android:drawSelectorOnTop="false"
+                android:layout_below="@+id/InfoText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="23dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageCircuit"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/listCircuits"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/entry1"
+            android:layout_marginTop="13dp"
+            android:layout_alignTop="@+id/imageCircuit"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/entry2"
+            android:layout_below="@+id/entry1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/entry3"
+            android:layout_below="@+id/entry2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/entry4"
+            android:layout_below="@+id/entry3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/entry5"
+            android:layout_below="@+id/entry4"
+            android:layout_alignParentLeft="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/text_view_answer"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comprobar"
+            android:id="@+id/TestButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignBottom="@+id/text_view_answer"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+            <es.uniovi.imovil.fcrtrainer.KeyboardView
+                android:id="@+id/keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:only_binary="true"/>
+        </LinearLayout>
+
+        <include layout="@layout/overlapped_info_window" />
+
+
+    </RelativeLayout>
+</ScrollView>
